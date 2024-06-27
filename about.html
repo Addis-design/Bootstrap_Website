@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Coffee Shop - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .jumbotron {
+            background-image: url('/api/placeholder/1600/600');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .jumbotron::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .jumbotron-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .feature-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .feature-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .feature-text {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Brew Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center jumbotron-content">
+            <h1 class="display-4">Welcome to Brew Haven</h1>
+            <p class="lead">Discover the perfect blend of comfort and flavor</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">About Brew Haven</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="coffee_interior.jpg" alt="Coffee shop interior" class="img-fluid rounded mb-3">
+            </div>
+            <div class="col-md-6">
+                <p class="lead">Brew Haven was founded in 2010 with a simple mission: to serve the best coffee in town. Our passion for quality beans and expert brewing techniques has made us a local favorite.</p>
+                <p>We believe in sustainable sourcing and supporting local communities. That's why we work directly with coffee farmers to ensure fair prices and environmentally friendly practices.</p>
+                <p>At Brew Haven, we're more than just a coffee shop - we're a community hub where people come together to share ideas, work on projects, or simply enjoy a moment of calm in their busy day.</p>
+                <div class="mt-4">
+                    <h4>Our Values</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Quality above all else</li>
+                        <li class="list-group-item">Sustainability in every cup</li>
+                        <li class="list-group-item">Community-focused</li>
+                        <li class="list-group-item">Continuous innovation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Locations</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="coffee_down_town.jpg" class="card-img-top" alt="Downtown location">
+                    <div class="card-body">
+                        <h5 class="card-title">Downtown</h5>
+                        <p class="card-text">123 Main St, Cityville</p>
+                        <p class="card-text">
+                            <strong>Hours:</strong><br>
+                            Mon-Fri: 6am-8pm<br>
+                            Sat-Sun: 7am-7pm
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="coffee_front.jpg" class="card-img-top mb-3" alt="Uptown location">
+                    <div class="card-body">
+                        <h5 class="card-title">Uptown</h5>
+                        <p class="card-text">456 High St, Cityville</p>
+                        <p class="card-text">
+                            <strong>Hours:</strong><br>
+                            Mon-Fri: 7am-7pm<br>
+                            Sat-Sun: 8am-6pm
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="coffee_suburb.jpg" class="card-img-top" alt="Suburb location">
+                    <div class="card-body">
+                        <h5 class="card-title">Suburb</h5>
+                        <p class="card-text">789 Oak Rd, Cityville</p>
+                        <p class="card-text">
+                            <strong>Hours:</strong><br>
+                            Mon-Fri: 6:30am-7:30pm<br>
+                            Sat-Sun: 7:30am-6:30pm
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Brew Haven Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

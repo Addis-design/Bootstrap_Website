@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Coffee Shop - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .jumbotron {
+            background-image: url('/api/placeholder/1600/600');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .jumbotron::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .jumbotron-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .feature-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .feature-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .feature-text {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Brew Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center jumbotron-content">
+            <h1 class="display-4">Welcome to Brew Haven</h1>
+            <p class="lead">Discover the perfect blend of comfort and flavor</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="feature-content">
+                    <img src="coffee_beans.jpg" alt="Coffee beans" class="img-fluid rounded feature-image mb-3">
+                    <div class="feature-text">
+                        <h3>Premium Beans</h3>
+                        <p>We source the finest coffee beans from around the world.</p>
+                    </div>
+                    <a href="about.html" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-content">
+                    <img src="Baristas.jpg" alt="Barista" class="img-fluid rounded feature-image mb-3">
+                    <div class="feature-text">
+                        <h3>Expert Baristas</h3>
+                        <p>Our skilled baristas craft the perfect cup every time.</p>
+                    </div>
+                    <a href="about.html" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-content">
+                    <img src="coffee_interior.jpg" alt="Cozy interior" class="img-fluid rounded feature-image mb-3">
+                    <div class="feature-text">
+                        <h3>Cozy Atmosphere</h3>
+                        <p>Relax and enjoy your coffee in our welcoming space.</p>
+                    </div>
+                    <a href="about.html" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Brew Haven Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
